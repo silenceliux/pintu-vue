@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+}
+body{
+    background:   url("../images/bg.jpg") right;
+    background-size: cover;
+}
+.title{
+    background: url("../images/title.png");
+    background-size: cover;
+    width: 20vh;
+    height: 10vh;
+    margin: 10vh auto;
+}
+.main{
+    padding-top: 20vh;
+}
+.main>a{
+    display: block;
+    color: #ffffff;
+    width: 50vw;
+    margin:2vw auto;
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.order3{
+    background-color: #86e2d5;
+}
+.order4{
+    background-color: #36d7b7;
+}
+.order5{
+    background-color: #03c9a9;
+}

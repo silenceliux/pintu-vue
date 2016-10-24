@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+</head>
+<body>
+<div id="main">
+    <ul>
+    <li v-for="item in items" class="{{liClass}}">
+        <img v-bind:src="item.path" alt="" class="{{item.name}}"  v-on:click="trans"/>
+    </li>
+    </ul>
+    <div class="whole" v-on:click="showPic">查看原图</div>
+    <div class="mask" v-show="isShow"></div>
+    <div class="view" v-show="isShow"><img src="../images/index.jpg" alt="" v-on:click="hidePic"/>
+    <div>轻点图片退出</div></div>
+</div>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/vue.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>
